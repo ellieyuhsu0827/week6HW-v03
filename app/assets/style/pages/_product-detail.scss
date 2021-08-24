@@ -1,0 +1,49 @@
+.product-detail-img {
+    height: 256px;
+}
+.product-detail-price {
+    height: 256px;
+    @include pad {
+        height: auto;
+    }
+    position: relative;
+    &::after {
+        position: absolute;
+        content: "";
+        width: 1px;
+        height: 100%;
+        background-color: #707070;
+        left: 50%;
+        top: 0px;
+        @include pad {
+            display: none;
+        }
+    }
+
+    .ticket_type {
+        color: #000;
+        position: relative;
+        &:hover::after {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 1px;
+            background-color: #e31277;
+            left: 0px;
+            top: 26px;
+        }
+    }
+    .hidden {
+        visibility: hidden;
+        
+    }
+}
+.product-detail-date {
+    width: 65px;
+}
+.h-559{
+    height: 559px;
+}
+.h-400{
+    height: 400px;
+}

@@ -1,0 +1,9 @@
+.product_name{
+    font-size: 36px;
+    @include pad {
+        font-size: 28px;
+    }
+}
+.product_img{
+    height: 285px;
+}

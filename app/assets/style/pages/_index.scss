@@ -1,0 +1,113 @@
+.head_banner {
+  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/ricardo-gomez-angel-UrOZTfXT0h0-unsplash%20(1).jpg");
+  background-size: cover;
+  background-position: center;
+  height: 480px;
+  .btn-outline-secondary {
+    color: #fff;
+    border-color: #fff;
+    &:hover {
+      color: #fff;
+      background-color: #e31277;
+      border-color: #e31277;
+    }
+  }
+  .row {
+    height: 480px;
+  }
+  @include pad {
+    li {
+      width: 50%;
+    }
+  }
+}
+.nav-scroller {
+  height: 2.75rem; /* 隱藏下方捲軸 */
+  overflow-y: hidden;
+  .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem; /* 隱藏下方捲軸 */
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .nav-link {
+    color: #707070;
+    position: relative;
+    &:hover::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: #e31277;
+      top: 32px;
+      left: 0px;
+    }
+    &:active::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 2px;
+      background-color: #e31277;
+      top: 32px;
+      left: 0px;
+    }
+    
+  }
+}
+.hotshow {
+  &_list {
+    background-color: #efefef;
+  }
+  &_pic {
+    padding-right: 0;
+    padding-left: 0;
+    height: 350px;
+  }
+  &_price {
+    font-weight: 500;
+  }
+  &_icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+.review_card {
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/people2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  &_content {
+    background-color: #190014cc;
+  }
+  &_title {
+    .border-start {
+      border-left: 1px solid #fff;
+    }
+  }
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: start;
+  background: #fff;
+}
+.recommend_img {
+  width: 350px;
+  height: 350px;
+  @include pad {
+      width: 100%;
+  }
+}
+.foot_jumbotron {
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/wladislaw-peljuchno-Y_f1aHpR1tc-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  .container {
+    height: 400px;
+  }
+}
