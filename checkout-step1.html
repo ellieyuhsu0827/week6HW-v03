@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    EXHIBINECTION-checkout1
+  </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <link rel="stylesheet" href="./assets/style/bootstrap.css">
+  <link rel="stylesheet" href="./assets/style/all.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link
+    href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+    rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="border border-dark position-relative zindex-nav top-0 start-0 bg-white">
+    <div class="container">
+      <div class="nav_bar d-flex justify-content-end position-relative py-5">
+        <h1 class="title fs-4 text-primary position-absolute top-50 start-50 translate-middle">
+          <a href="index.html">EXHIBINECTION</a> </h1>
+        <ul class="nav_bar_list d-md-flex align-items-center d-grid gap-6 ">
+          <li class="sign d-md-block d-none"><a href="javascript:;" class="link-dark">Sign in</a></li>
+          <li class="sign d-md-block d-none"><a href="javascript:;" class="link-dark">Sign up</a></li>
+          <li>
+            <a href="javascript:;" type="button" class="link-black position-relative" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+              <span class="material-icons align-middle ">
+                confirmation_number
+              </span>
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">3<span
+                  class="visually-hidden">cart-count</span></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <!--  購物車視窗 -->
+  <div class="offcanvas offcanvas-end bg-black text-white" tabindex="-1" id="offcanvasRight"
+    aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header mt-15 px-8">
+      <h5 class="fs-2" id="offcanvasRightLabel ">Cart List</h5>
+      <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas"
+        aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body scrollbar px-8">
+      <div class="cart_product bg-white text-black rounded d-flex align-items-center position-relative px-8 py-6 mb-3">
+        <button type="button" class="btn-close p-2 position-absolute top-0 start-0" aria-label="Close"></button>
+        <img
+          src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg"
+          alt="">
+        <div class="cart_product_info px-4 flex-fill">
+          <p class="fw-bold">2020 台味設計展</p>
+          <p class="fw-bold">01 JUN — 31 OCT</p>
+          <p class="text-dark">全票</p>
+          <p class="fw-bold fs-5 mb-0">NT$350</p>
+        </div>
+        <div class="cart_product_amount fw-bold fs-5 d-flex align-items-center">
+          <a href="javascript:;"><span class="material-icons-outlined px-3 align-self-center d-block">
+              add</span></a>
+          <p class="mb-0">
+            01
+          </p>
+          <a href="javascript:;"><span class="material-icons-outlined px-3 align-self-center d-block">remove
+            </span></a>
+        </div>
+      </div>
+      <div class="cart_product bg-white text-black rounded d-flex align-items-center position-relative px-8 py-6 mb-3">
+        <button type="button" class="btn-close p-2 position-absolute top-0 start-0" aria-label="Close"></button>
+        <img
+          src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/michel-catalisano--a0D9LpcKV8-unsplash.jpg"
+          alt="">
+        <div class="cart_product_info px-4 flex-fill">
+          <p class="fw-bold">2020 台味設計展</p>
+          <p class="fw-bold">01 JUN — 31 OCT</p>
+          <p class="text-dark">全票</p>
+          <p class="fw-bold fs-5 mb-0">NT$350</p>
+        </div>
+        <div class="cart_product_amount fw-bold fs-5 d-flex align-items-center">
+          <a href=""><span class="material-icons-outlined px-3 align-self-center d-block">
+              add</span></a>
+          <p class="mb-0">
+            01
+          </p>
+          <a href=""><span class="material-icons-outlined px-3 align-self-center d-block">remove
+            </span></a>
+        </div>
+      </div>
+      <div class="cart_product bg-white text-black rounded d-flex align-items-center position-relative px-8 py-6">
+        <button type="button" class="btn-close p-2 position-absolute top-0 start-0" aria-label="Close"></button>
+        <img
+          src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/moralis-tsai-8xsktFRw28I-unsplash.jpg"
+          alt="">
+        <div class="cart_product_info px-4 flex-fill">
+          <p class="fw-bold">2020 台味設計展</p>
+          <p class="fw-bold">01 JUN — 31 OCT</p>
+          <p class="text-dark">全票</p>
+          <p class="fw-bold fs-5 mb-0">NT$350</p>
+        </div>
+        <div class="cart_product_amount fw-bold fs-5 d-flex align-items-center">
+          <a href=""><span class="material-icons-outlined px-3 align-self-center d-block">
+              add</span></a>
+          <p class="mb-0">
+            01
+          </p>
+          <a href=""><span class="material-icons-outlined px-3 align-self-center d-block">remove
+            </span></a>
+        </div>
+      </div>
+
+      <div class="cart_total d-flex justify-content-between align-items-center mt-5">
+        <p class="mb-0 fs-5">小計 <span>NT$1050</span> </p>
+        <button onclick="self.location.href='checkout-step1.html'" class="btn btn-primary btn-lg">前往結帳</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="d-flex row">
+        <div class="col-md-8 col-12 ">
+            <div class="timeline mt-6 pt-2 text-center mb-md-7 mb-5 row mx-0 justify-content-between ">
+                <div class="state col-3 dot-current fw-bold">確認訂單</div>
+                <div class="state col-3 dot ">填寫訂購資訊</div>
+                <div class="state col-3 dot ">填寫付款資訊</div>
+                <div class="state col-3 dot ">完成訂購</div>
+            </div>
+            <div class="row align-items-center mb-5">
+                <div class="col-md-3 col-6">
+                    <img class="w-100 h-84" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg"
+                        alt="">
+                </div>
+                <div class="col-md-3 col-6 position-relative">
+                    <p class="fw-bold">2020 台味設計展</p>
+                    <p class="fw-bold">01 JUN — 31 OCT</p>
+                    <p class="text-dark fw-light">全票 <span class="fw-bold text-black fs-5 d-md-none d-inline">1</span></p>
+                    <button type="button" class="btn-md-close btn-close p-2 position-absolute top-0 end-12 d-md-none d-block" aria-label="Close"></button>
+                </div>
+                
+                <div class="d-md-block d-none col-6">
+                    <div class=" d-flex justify-content-between">
+                    <p class="fw-bold fs-5 ">NT$350</p>
+                    <div class="cart_product_amount fw-bold fs-5 d-flex align-items-center ">
+                        <a href="javascript:;"><span class="material-icons-outlined px-3 align-self-center d-block">
+                            remove</span></a>
+                        <p class="mb-0">
+                            01
+                        </p>
+                        <a href="javascript:;"><span
+                                class="material-icons-outlined px-3 align-self-center d-block">add
+                            </span></a>
+                    </div>
+                    <button type="button" class="btn-close p-2 top-0 start-0" aria-label="Close"></button>
+                </div>
+                </div>
+                
+            </div>
+            <div class="row align-items-center mb-5">
+                <div class="col-md-3 col-6">
+                    <img class="w-100 h-84" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/michel-catalisano--a0D9LpcKV8-unsplash.jpg"
+                        alt="">
+                </div>
+                <div class="col-md-3 col-6 position-relative">
+                    <p class="fw-bold">No.22 線上設計展</p>
+                    <p class="fw-bold">01 JUN — 31 OCT</p>
+                    <p class="text-dark fw-light">全票 <span class="fw-bold text-black fs-5 d-md-none d-inline">1</span></p>
+                    <button type="button" class="btn-close p-2 position-absolute top-0 end-12 d-md-none d-block " aria-label="Close"></button>
+                </div>
+                
+                <div class="d-md-block d-none col-6">
+                    <div class=" d-flex justify-content-between">
+                    <p class="fw-bold fs-5 ">NT$350</p>
+                    <div class="cart_product_amount fw-bold fs-5 d-flex align-items-center ">
+                        <a href="javascript:;"><span class="material-icons-outlined px-3 align-self-center d-block">
+                            remove</span></a>
+                        <p class="mb-0">
+                            01
+                        </p>
+                        <a href="javascript:;"><span
+                                class="material-icons-outlined px-3 align-self-center d-block">add
+                            </span></a>
+                    </div>
+                    <button type="button" class="btn-close p-2 top-0 start-0" aria-label="Close"></button>
+                </div>
+                </div>
+                
+            </div>
+            <div class="row align-items-center mb-5">
+                <div class="col-md-3 col-6">
+                    <img class="w-100 h-84" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/moralis-tsai-8xsktFRw28I-unsplash.jpg"
+                        alt="">
+                </div>
+                <div class="col-md-3 col-6 position-relative">
+                    <p class="fw-bold">高雄設計節</p>
+                    <p class="fw-bold">01 JUN — 31 OCT</p>
+                    <p class="text-dark fw-light">全票 <span class="fw-bold text-black fs-5 d-md-none d-inline">1</span></p>
+                    <button type="button" class="btn-close p-2 position-absolute top-0 end-12 d-md-none d-block" aria-label="Close"></button>
+                </div>
+                
+                <div class="d-md-block d-none col-6">
+                    <div class=" d-flex justify-content-between">
+                    <p class="fw-bold fs-5 ">NT$350</p>
+                    <div class="cart_product_amount fw-bold fs-5 d-flex align-items-center ">
+                        <a href="javascript:;"><span class="material-icons-outlined px-3 align-self-center d-block">
+                            remove</span></a>
+                        <p class="mb-0">
+                            01
+                        </p>
+                        <a href="javascript:;"><span
+                                class="material-icons-outlined px-3 align-self-center d-block">add
+                            </span></a>
+                    </div>
+                    <button type="button" class="btn-close p-2 top-0 start-0" aria-label="Close"></button>
+                </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+    <div class="total d-flex justify-content-end align-items-end pb-13">
+        <div class="col-md-8 col-6 d-block"></div>
+        <div class="nextstep col-md-4 col-6 flex-fill">
+            <div class="d-flex justify-content-between mb-3">
+                <p class="fw-bold fs-5">小計</p>
+                <p class="fw-bold fs-5">NT$1050</p>
+            </div>
+            <a class="btn btn-secondary w-100" href="checkout-step2.html">下一步</a>
+        </div>
+    </div>
+
+
+</div>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
